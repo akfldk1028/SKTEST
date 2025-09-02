@@ -1,0 +1,176 @@
+[
+  {
+    "id": "ce703814-728e-4f0c-8b85-343cd27eaa5b",
+    "timestamp": "2025-09-02T19:49:14.165460",
+    "type": "agent_to_agent_request",
+    "from_agent": "TravelPlanningAgent",
+    "to_agent": "FlightBookingAgent",
+    "request": "Book a flight from London to Seoul next Friday",
+    "base_url": "http://localhost:9999",
+    "agent_card": {
+      "name": "Semantic Kernel Flight Booking Agent",
+      "description": "An agent that helps users book flights using semantic kernel capabilities.",
+      "version": "1.0.0",
+      "skills": [
+        {
+          "description": "Assists users in booking flights based on their requests.",
+          "examples": [
+            "Book a flight from New York to London next Monday.",
+            "I need a flight to Paris tomorrow morning."
+          ],
+          "id": "flight_booking",
+          "inputModes": null,
+          "name": "Flight Booking",
+          "outputModes": null,
+          "security": null,
+          "tags": [
+            "flight",
+            "booking",
+            "travel"
+          ]
+        }
+      ]
+    },
+    "response": {
+      "id": "5478c042-0dd6-4c1b-96e3-0f83496bed36",
+      "jsonrpc": "2.0",
+      "result": {
+        "kind": "message",
+        "messageId": "c6ecbeb7-572a-4308-8ccd-6bb41d09a712",
+        "parts": [
+          {
+            "kind": "text",
+            "text": "Thank you for your flight request from London to Seoul next Friday. Could you please provide me with the number of passengers traveling, preferred class (economy, business, first class), and specific departure and arrival times if you have any preferences? This information will help me find the best flight options for you."
+          }
+        ],
+        "role": "agent"
+      }
+    },
+    "status": "success",
+    "response_text": "Thank you for your flight request from London to Seoul next Friday. Could you please provide me with the number of passengers traveling, preferred class (economy, business, first class), and specific departure and arrival times if you have any preferences? This information will help me find the best flight options for you."
+  },
+  {
+    "id": "4b635ba9-4ed2-4ee7-bcf8-464f2a15eeb5",
+    "timestamp": "2025-09-02T19:49:13.326614",
+    "type": "user_interaction",
+    "context_id": "clean_log_test",
+    "user_input": "I need a flight from London to Seoul next Friday",
+    "response": "Please provide the number of passengers traveling, preferred class (economy, business, first class), and any specific departure and arrival times you prefer for your flight from London to Seoul next Friday. This information will help the Flight Booking Agent to find the best flight options for you."
+  },
+  {
+    "id": "0c15c831-5766-4429-a59a-2f74a7dbbfc7",
+    "timestamp": "2025-09-02T19:49:51.784109",
+    "type": "agent_to_agent_request",
+    "from_agent": "TravelPlanningAgent",
+    "to_agent": "FlightBookingAgent",
+    "request": "1 passenger, business class, morning departure, London to Seoul next Friday",
+    "base_url": "http://localhost:9999",
+    "agent_card": {
+      "name": "Semantic Kernel Flight Booking Agent",
+      "description": "An agent that helps users book flights using semantic kernel capabilities.",
+      "version": "1.0.0",
+      "skills": [
+        {
+          "description": "Assists users in booking flights based on their requests.",
+          "examples": [
+            "Book a flight from New York to London next Monday.",
+            "I need a flight to Paris tomorrow morning."
+          ],
+          "id": "flight_booking",
+          "inputModes": null,
+          "name": "Flight Booking",
+          "outputModes": null,
+          "security": null,
+          "tags": [
+            "flight",
+            "booking",
+            "travel"
+          ]
+        }
+      ]
+    },
+    "response": {
+      "id": "83b15711-0ac8-454b-9e68-0dfbe7098f73",
+      "jsonrpc": "2.0",
+      "result": {
+        "kind": "message",
+        "messageId": "a347376f-2e73-4ae9-81de-fa2ea2348712",
+        "parts": [
+          {
+            "kind": "text",
+            "text": "Thank you for providing the details. I will now search for available flights from London to Seoul next Friday morning for 1 passenger in business class. Please give me a moment to find the best options for you."
+          }
+        ],
+        "role": "agent"
+      }
+    },
+    "status": "success",
+    "response_text": "Thank you for providing the details. I will now search for available flights from London to Seoul next Friday morning for 1 passenger in business class. Please give me a moment to find the best options for you."
+  },
+  {
+    "id": "86363dba-a678-4914-a152-faedff03fb80",
+    "timestamp": "2025-09-02T19:49:50.903646",
+    "type": "user_interaction",
+    "context_id": "clean_log_test",
+    "user_input": "1 passenger, business class, morning departure preferred",
+    "response": "Thank you for providing the details. I will now search for available flights from London to Seoul next Friday morning for 1 passenger in business class. Please give me a moment to find the best options for you."
+  },
+  {
+    "id": "853c519f-3b7c-4599-9e26-d040a48e8563",
+    "timestamp": "2025-09-02T19:50:26.279283",
+    "type": "agent_to_agent_request",
+    "from_agent": "TravelPlanningAgent",
+    "to_agent": "FlightBookingAgent",
+    "request": "Show available flight options for 1 passenger, business class, morning departure from London to Seoul next Friday",
+    "base_url": "http://localhost:9999",
+    "agent_card": {
+      "name": "Semantic Kernel Flight Booking Agent",
+      "description": "An agent that helps users book flights using semantic kernel capabilities.",
+      "version": "1.0.0",
+      "skills": [
+        {
+          "description": "Assists users in booking flights based on their requests.",
+          "examples": [
+            "Book a flight from New York to London next Monday.",
+            "I need a flight to Paris tomorrow morning."
+          ],
+          "id": "flight_booking",
+          "inputModes": null,
+          "name": "Flight Booking",
+          "outputModes": null,
+          "security": null,
+          "tags": [
+            "flight",
+            "booking",
+            "travel"
+          ]
+        }
+      ]
+    },
+    "response": {
+      "id": "29a0a95a-d468-4aad-b7e1-41b1fee0289d",
+      "jsonrpc": "2.0",
+      "result": {
+        "kind": "message",
+        "messageId": "072d7c7a-f98f-4d9c-b974-eae21a559590",
+        "parts": [
+          {
+            "kind": "text",
+            "text": "I have found the following flight option for you from London to Seoul next Friday morning in business class:\n\n- Flight: KE907  \n  - Airline: Korean Air\n  - Departure: London (LHR) at 10:00 AM\n  - Arrival: Seoul (ICN) at 5:30 PM (next day)\n  - Duration: 11 hours 30 minutes\n  - Price: $1500\n\nPlease let me know if you would like to proceed with booking this flight for 1 passenger in business class."
+          }
+        ],
+        "role": "agent"
+      }
+    },
+    "status": "success",
+    "response_text": "I have found the following flight option for you from London to Seoul next Friday morning in business class:\n\n- Flight: KE907  \n  - Airline: Korean Air\n  - Departure: London (LHR) at 10:00 AM\n  - Arrival: Seoul (ICN) at 5:30 PM (next day)\n  - Duration: 11 hours 30 minutes\n  - Price: $1500\n\nPlease let me know if you would like to proceed with booking this flight for 1 passenger in business class."
+  },
+  {
+    "id": "2a792661-f324-482b-8edf-5e469b3acdeb",
+    "timestamp": "2025-09-02T19:50:25.226707",
+    "type": "user_interaction",
+    "context_id": "clean_log_test",
+    "user_input": "Show me the available options",
+    "response": "I have found the following flight option for you from London to Seoul next Friday morning in business class:\n\n- Flight: KE907  \n  - Airline: Korean Air\n  - Departure: London (LHR) at 10:00 AM\n  - Arrival: Seoul (ICN) at 5:30 PM (next day)\n  - Duration: 11 hours 30 minutes\n  - Price: $1500\n\nPlease let me know if you would like to proceed with booking this flight for 1 passenger in business class."
+  }
+]

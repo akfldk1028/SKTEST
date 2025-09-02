@@ -1,0 +1,60 @@
+[
+  {
+    "id": "71d0df76-9d6f-48c4-8fb6-c87bb3b33a56",
+    "timestamp": "2025-09-02T19:36:34.661078",
+    "type": "agent_to_agent_request",
+    "from_agent": "TravelPlanningAgent",
+    "to_agent": "FlightBookingAgent",
+    "request": "Book a flight from Seoul to Paris for next Monday",
+    "base_url": "http://localhost:9999",
+    "agent_card": {
+      "name": "Semantic Kernel Flight Booking Agent",
+      "description": "An agent that helps users book flights using semantic kernel capabilities.",
+      "version": "1.0.0",
+      "skills": [
+        {
+          "description": "Assists users in booking flights based on their requests.",
+          "examples": [
+            "Book a flight from New York to London next Monday.",
+            "I need a flight to Paris tomorrow morning."
+          ],
+          "id": "flight_booking",
+          "inputModes": null,
+          "name": "Flight Booking",
+          "outputModes": null,
+          "security": null,
+          "tags": [
+            "flight",
+            "booking",
+            "travel"
+          ]
+        }
+      ]
+    },
+    "response": {
+      "id": "4f61a50f-0522-4786-81f8-78e9ec2e5b62",
+      "jsonrpc": "2.0",
+      "result": {
+        "kind": "message",
+        "messageId": "375edd55-7616-48aa-af4e-a39c588ce5ef",
+        "parts": [
+          {
+            "kind": "text",
+            "text": "I'm sorry, I currently do not have the capability to book flights. However, I can guide you on how to book a flight online or provide you with information on airlines that operate between Seoul and Paris. Let me know if you need any help with that!\n\nThis is a flight booking agent. Please provide the necessary details for booking a flight."
+          }
+        ],
+        "role": "agent"
+      }
+    },
+    "status": "success",
+    "response_text": "I'm sorry, I currently do not have the capability to book flights. However, I can guide you on how to book a flight online or provide you with information on airlines that operate between Seoul and Paris. Let me know if you need any help with that!\n\nThis is a flight booking agent. Please provide the necessary details for booking a flight."
+  },
+  {
+    "id": "9a87a5ca-b0d2-4f99-9e06-7cfb7a0d4eeb",
+    "timestamp": "2025-09-02T19:36:33.330324",
+    "type": "user_interaction",
+    "context_id": "logging_test",
+    "user_input": "I need to book a flight from Seoul to Paris next Monday",
+    "response": "Since I'm unable to book the flight for you directly, I can guide you on how to book a flight online or provide you with information on airlines that operate between Seoul and Paris. Let me know how you would like to proceed or if you need any specific assistance!"
+  }
+]

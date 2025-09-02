@@ -1,0 +1,184 @@
+[
+  {
+    "id": "86c30a6b-a355-41df-bc74-2f25f64b2135",
+    "timestamp": "2025-09-02T19:41:58.461522",
+    "type": "agent_to_agent_request",
+    "from_agent": "TravelPlanningAgent",
+    "to_agent": "FlightBookingAgent",
+    "request": "Book a flight from New York to Tokyo next Monday morning, around 9 AM",
+    "base_url": "http://localhost:9999",
+    "agent_card": {
+      "name": "Semantic Kernel Flight Booking Agent",
+      "description": "An agent that helps users book flights using semantic kernel capabilities.",
+      "version": "1.0.0",
+      "skills": [
+        {
+          "description": "Assists users in booking flights based on their requests.",
+          "examples": [
+            "Book a flight from New York to London next Monday.",
+            "I need a flight to Paris tomorrow morning."
+          ],
+          "id": "flight_booking",
+          "inputModes": null,
+          "name": "Flight Booking",
+          "outputModes": null,
+          "security": null,
+          "tags": [
+            "flight",
+            "booking",
+            "travel"
+          ]
+        }
+      ]
+    },
+    "response": {
+      "id": "86de0fa7-db9b-4588-97f8-a7ab7f0ae224",
+      "jsonrpc": "2.0",
+      "result": {
+        "kind": "message",
+        "messageId": "1af77934-de61-4940-9d9f-ca7124b93638",
+        "parts": [
+          {
+            "kind": "text",
+            "text": "Thank you for your flight request from New York to Tokyo next Monday morning around 9 AM. Could you please provide me with the number of passengers traveling and their preferred class (economy, business, first class)? This information will help me find the best flight options for you."
+          }
+        ],
+        "role": "agent"
+      }
+    },
+    "status": "success",
+    "response_text": "Thank you for your flight request from New York to Tokyo next Monday morning around 9 AM. Could you please provide me with the number of passengers traveling and their preferred class (economy, business, first class)? This information will help me find the best flight options for you."
+  },
+  {
+    "id": "54729bbc-bf6d-42ed-8208-fda4ef92ee18",
+    "timestamp": "2025-09-02T19:41:57.437086",
+    "type": "user_interaction",
+    "context_id": "ai_conversation_test",
+    "user_input": "I want to book a flight from New York to Tokyo next Monday morning, preferably around 9 AM",
+    "response": "Could you please provide the number of passengers traveling and their preferred class (economy, business, first class) for the flight from New York to Tokyo next Monday morning around 9 AM? This information will help in finding the best options for you."
+  },
+  {
+    "id": "f294495f-2972-4ac8-a47d-a733e6b66d53",
+    "timestamp": "2025-09-02T19:42:20.370662",
+    "type": "agent_to_agent_request",
+    "from_agent": "TravelPlanningAgent",
+    "to_agent": "FlightBookingAgent",
+    "request": "Book a flight for 2 passengers in economy class from New York to Tokyo next Monday morning around 9 AM",
+    "base_url": "http://localhost:9999",
+    "agent_card": {
+      "name": "Semantic Kernel Flight Booking Agent",
+      "description": "An agent that helps users book flights using semantic kernel capabilities.",
+      "version": "1.0.0",
+      "skills": [
+        {
+          "description": "Assists users in booking flights based on their requests.",
+          "examples": [
+            "Book a flight from New York to London next Monday.",
+            "I need a flight to Paris tomorrow morning."
+          ],
+          "id": "flight_booking",
+          "inputModes": null,
+          "name": "Flight Booking",
+          "outputModes": null,
+          "security": null,
+          "tags": [
+            "flight",
+            "booking",
+            "travel"
+          ]
+        }
+      ]
+    },
+    "response": {
+      "id": "1951ec60-2a89-49df-b53b-dcecf86d5f62",
+      "jsonrpc": "2.0",
+      "result": {
+        "kind": "message",
+        "messageId": "ca5b570a-acaa-4f29-822d-76cde58f1996",
+        "parts": [
+          {
+            "kind": "text",
+            "text": "Thank you for providing the details. I will now search for available flights from New York to Tokyo next Monday morning around 9 AM for 2 passengers in economy class. Please give me a moment to find the best options for you."
+          }
+        ],
+        "role": "agent"
+      }
+    },
+    "status": "success",
+    "response_text": "Thank you for providing the details. I will now search for available flights from New York to Tokyo next Monday morning around 9 AM for 2 passengers in economy class. Please give me a moment to find the best options for you."
+  },
+  {
+    "id": "d4da4b30-f6e4-4850-987b-410cf621297e",
+    "timestamp": "2025-09-02T19:42:19.185395",
+    "type": "user_interaction",
+    "context_id": "ai_conversation_test",
+    "user_input": "2 passengers, economy class please",
+    "response": "Thank you for providing the details. I will now search for available flights from New York to Tokyo next Monday morning around 9 AM for 2 passengers in economy class. Please give me a moment to find the best options for you."
+  },
+  {
+    "id": "96c8199c-17bc-4cc4-8e33-6d6e6de8c2ab",
+    "timestamp": "2025-09-02T19:42:32.299964",
+    "type": "agent_to_agent_request",
+    "from_agent": "TravelPlanningAgent",
+    "to_agent": "FlightBookingAgent",
+    "request": "Show available flight options",
+    "base_url": "http://localhost:9999",
+    "agent_card": {
+      "name": "Semantic Kernel Flight Booking Agent",
+      "description": "An agent that helps users book flights using semantic kernel capabilities.",
+      "version": "1.0.0",
+      "skills": [
+        {
+          "description": "Assists users in booking flights based on their requests.",
+          "examples": [
+            "Book a flight from New York to London next Monday.",
+            "I need a flight to Paris tomorrow morning."
+          ],
+          "id": "flight_booking",
+          "inputModes": null,
+          "name": "Flight Booking",
+          "outputModes": null,
+          "security": null,
+          "tags": [
+            "flight",
+            "booking",
+            "travel"
+          ]
+        }
+      ]
+    },
+    "response": {
+      "id": "7ce30257-ec88-4fa5-89c7-97858a2014d8",
+      "jsonrpc": "2.0",
+      "result": {
+        "kind": "message",
+        "messageId": "a6d2d86b-3055-45aa-b19b-3f7c0fa8f903",
+        "parts": [
+          {
+            "kind": "text",
+            "text": "I have found the following flight options for you from New York to Tokyo next Monday morning around 9 AM:\n\n1. Flight: JL008  \n   - Airline: Japan Airlines\n   - Departure: New York (JFK) at 9:00 AM\n   - Arrival: Tokyo (NRT) at 12:45 PM (next day)\n   - Duration: 14 hours 45 minutes\n   - Price: $700 per person\n\n2. Flight: UA891  \n   - Airline: United Airlines\n   - Departure: New York (EWR) at 9:30 AM\n   - Arrival: Tokyo (HND) at 1:15 PM (next day)\n   - Duration: 14 hours 45 minutes\n   - Price: $680 per person\n\nPlease let me know if you would like to proceed with booking any of these flights for 2 passengers in economy class."
+          }
+        ],
+        "role": "agent"
+      }
+    },
+    "status": "success",
+    "response_text": "I have found the following flight options for you from New York to Tokyo next Monday morning around 9 AM:\n\n1. Flight: JL008  \n   - Airline: Japan Airlines\n   - Departure: New York (JFK) at 9:00 AM\n   - Arrival: Tokyo (NRT) at 12:45 PM (next day)\n   - Duration: 14 hours 45 minutes\n   - Price: $700 per person\n\n2. Flight: UA891  \n   - Airline: United Airlines\n   - Departure: New York (EWR) at 9:30 AM\n   - Arrival: Tokyo (HND) at 1:15 PM (next day)\n   - Duration: 14 hours 45 minutes\n   - Price: $680 per person\n\nPlease let me know if you would like to proceed with booking any of these flights for 2 passengers in economy class."
+  },
+  {
+    "id": "7affc972-ece8-4aa0-9f2a-1a9cf1f7bd15",
+    "timestamp": "2025-09-02T19:42:31.611004",
+    "type": "user_interaction",
+    "context_id": "ai_conversation_test",
+    "user_input": "What options are available?",
+    "response": "I have found the following flight options for you from New York to Tokyo next Monday morning around 9 AM:\n\n1. Flight: JL008  \n   - Airline: Japan Airlines\n   - Departure: New York (JFK) at 9:00 AM\n   - Arrival: Tokyo (NRT) at 12:45 PM (next day)\n   - Duration: 14 hours 45 minutes\n   - Price: $700 per person\n\n2. Flight: UA891  \n   - Airline: United Airlines\n   - Departure: New York (EWR) at 9:30 AM\n   - Arrival: Tokyo (HND) at 1:15 PM (next day)\n   - Duration: 14 hours 45 minutes\n   - Price: $680 per person\n\nPlease let me know if you would like to proceed with booking any of these flights for 2 passengers in economy class."
+  },
+  {
+    "id": "d848ed32-35ed-48c9-b6dd-e232f1b25bfb",
+    "timestamp": "2025-09-02T19:43:11.478097",
+    "type": "user_interaction",
+    "context_id": "ai_conversation_test",
+    "user_input": "I'll take the United Airlines flight for 80 per person",
+    "response": "I apologize for the confusion, but the United Airlines flight from New York to Tokyo is priced at $680 per person, not $80. Would you like to proceed with booking the United Airlines flight for $680 per person for 2 passengers in economy class? Let me know so I can arrange the booking for you."
+  }
+]
