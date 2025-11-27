@@ -4,7 +4,9 @@
       "WebSearch",
       "Bash(venvScripts:*)",
       "Bash(pip install:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(mkdir:*)",
+      "Read(D:\\Data\\00_Personal\\Implementing-Multi-Agent-With-A2A-SemanticKernel-main/**)"
     ],
     "deny": [],
     "ask": []
